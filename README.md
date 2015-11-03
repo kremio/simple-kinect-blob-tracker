@@ -7,9 +7,9 @@ It provides simple blob tracking, the possibility to record and play QuickTime m
 Tested with the 1st version of the Kinect on MacBook Pro running Yosemite.
 
 ### CinderBlocks dependencies
-Cinder-Kinect: https://github.com/cinder/Cinder-Kinect
-Cinder-OpenCV: https://github.com/cinder/Cinder-OpenCV
-Cinder-Config: https://github.com/dawidgorny/Cinder-Config
+* Cinder-Kinect: https://github.com/cinder/Cinder-Kinect
+* Cinder-OpenCV: https://github.com/cinder/Cinder-OpenCV
+* Cinder-Config: https://github.com/dawidgorny/Cinder-Config
 
 ### Usage instructions
 When you startup the program it will check for a connected Kinect sensor. If one is found you will see the filtered depth data feed in the right half of the window, while the left part will show you the blob detection result in real time.
@@ -21,7 +21,7 @@ To record a movie from the Kinect feed, press the SPACE key on your keyboard, yo
 The tracker's configuration are automatically saved when the program shuts down.
 
 ### OSC
-Since this tool was made for the purpose of exhibiting Mimodek in Maribor, Slovenia, where we only needed to track the presence of people in the space and there distance from the projection screen, only the number of blobs detected and the normalised [0..1] Y coordinate of the object closest to the top of the frame are sent through OSC. When I have more time to refine this software I'll make it output blobs centroids, etc...
+Since this tool was made for the purpose of exhibiting [Mimodek] (https://github.com/kremio/mimodek/tree/develop) in Maribor, Slovenia, where we only needed to track the presence of people in the space and there distance from the projection screen, only the number of blobs detected and the normalised [0..1] Y coordinate of the object closest to the top of the frame are sent through OSC. When I have more time to refine this software I'll make it output blobs centroids, etc...
 
 /mimodek/blobs/
 => (int) blob count
