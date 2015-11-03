@@ -22,9 +22,9 @@ The tracker's configuration are automatically saved when the program shuts down.
 
 ### OSC
 Since this tool was made for the purpose of exhibiting [Mimodek] (https://github.com/kremio/mimodek/tree/develop) in Maribor, Slovenia, where we only needed to track the presence of people in the space and there distance from the projection screen, only the number of blobs detected and the normalised [0..1] Y coordinate of the object closest to the top of the frame are sent through OSC. When I have more time to refine this software I'll make it output blobs centroids, etc...
-
+```
 /mimodek/blobs/
 => (int) blob count
 => (float) normalised [0..1] Y coordinate of the object closest to the top of the frame
-
+```
 
